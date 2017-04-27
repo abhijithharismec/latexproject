@@ -1,0 +1,5 @@
+Only important codes are uploaded here.
+All other files will be generated automatically.
+Learn how to create first django app tutorial from django documentation.
+latexproject is our project.
+folder app is djangoapp.
