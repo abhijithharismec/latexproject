@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:gravity="center">
+
+
+    <Button
+        android:text="CAMERA INPUT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="takePicture"
+        android:id="@+id/button3" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STORAGE INPUT"
+        android:id="@+id/buttonChoose" />
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_weight="0.19"
+        android:id="@+id/imageView" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:hint="Enter your email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:id="@+id/buttonUpload"
+        android:layout_weight="0.01"
+        android:layout_toRightOf="@+id/action_text" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Code"
+        android:id="@+id/codegen"
+        android:layout_weight="0.01"
+        android:onClick="codegenerate"
+        android:layout_toRightOf="@+id/action_text" />
+
+</LinearLayout>
